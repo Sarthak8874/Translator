@@ -4,7 +4,7 @@ const textToSpeech = require("@google-cloud/text-to-speech");
 const fs = require("fs");
 const utils = require("util");
 const path = require("path");
-const http = require("http");
+
 const CREDENTIALS = JSON.parse(process.env.CREDENTIALS);
 const client = new textToSpeech.TextToSpeechClient({
   credentials: CREDENTIALS,

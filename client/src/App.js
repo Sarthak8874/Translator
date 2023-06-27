@@ -46,6 +46,7 @@ function App() {
         console.log(e);
       });
   }
+  
   function checktext() {
     axios
       .get("http://localhost:3000/detectlanguage", {

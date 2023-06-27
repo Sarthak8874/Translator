@@ -2,7 +2,7 @@ const express = require("express");
 require('dotenv').config();
 
 const translateRouter = require("./routers/Translatetext")
-const traslatetoaudio = require("./routers/Translatetoaudio")
+const traslatetoaudioRoute = require("./routers/Translatetoaudio")
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 
 app.use(express.json())
 app.use(translateRouter)
-app.use(traslatetoaudio)
+app.use(traslatetoaudioRoute)
 
 app.listen('3000', () => {
   console.log("Server is up on port 3000");
